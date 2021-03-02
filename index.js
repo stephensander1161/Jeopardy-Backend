@@ -25,3 +25,5 @@ mongoose
 	.catch((error) => console.log(`${error} did not connect`));
 
 mongoose.set('useFindAndModify', false);
+
+app.get('/', (req, res) => res.status(200).send('Server Running'));
